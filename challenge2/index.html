@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Course Grades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logout">
+    <button>Logout</button>
+  </div>
+
+  <div class="container">
+    <img src="img/cnet.png" alt="Computer Networking Technology Logo" class="logo">
+    <h1>Enter Course Grades</h1>
+
+    <form>
+      <span class="form-group">
+        <label>First Name :</label>
+        <input type="text" placeholder="First Name Only">
+      </span>
+      <span class="form-group">
+        <label>Last Name :</label>
+        <input type="text" placeholder="Last Name only">
+      </span>
+      <span class="form-group">
+        <label>Course Number :</label>
+        <select>
+          <option>CNET2020</option>
+          <option>CNET2021</option>
+        </select>
+      </span>
+      <span class="form-group">
+        <label>Final Grade :</label>
+        <input type="number" value="100">
+      </span>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <div class="table-section">
+    <p class="note">The table below displays the contents of the FinalGrades.txt file located on the Webserver</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Course #</th>
+          <th>Grade</th>
+          <th>Letter Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chris</td>
+          <td>Arsenault</td>
+          <td>CNET2020</td>
+          <td>95</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="clear">Clear Text file</button>
+  </div>
+</body>
+</html>

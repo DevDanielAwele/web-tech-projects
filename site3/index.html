@@ -1,0 +1,68 @@
+<html>
+<head>
+
+<script>
+	function displayNumbersPressed(x){
+		var y = document.getElementById("display").value;
+		window.z = y + x;
+		document.getElementById("display").value = window.z;
+	
+	return;
+	}
+	
+	function operator(a){
+		window.n = document.getElementById("display").value;
+		window.m = a;
+		document.getElementById("display").value = "";
+	
+	return;
+	}
+	
+	function math(s){
+		var t = document.getElementById("display").value;
+		if (window.m == 111){
+			var answer = parseInt(window.n) + parseInt(t);
+			document.getElementById("display").value = answer;
+		}
+		if (window.m == 222){
+			var answer = parseInt(window.n) - parseInt(t);
+			document.getElementById("display").value = answer;
+		}
+		if (window.m == 333){
+			var answer = parseInt(window.n) * parseInt(t);
+			document.getElementById("display").value = answer;
+		}
+		if (window.m == 444){
+			var answer = parseInt(window.n) / parseInt(t);
+			document.getElementById("display").value = answer;
+		}
+	return;
+	}	
+				
+</script>
+
+</head>
+
+<body>
+
+<form>
+	<input type="text" name="value" id="display">
+	<table>
+		<tr>
+			<td><button type="button" onclick="displayNumbersPressed(1)" value="1">1</button></td><td><button type="button" onclick="displayNumbersPressed(2)" value="2">2</button></td><td><button type="button" onclick="displayNumbersPressed(3)" value="3">3</button></td><td><button type="button" onclick="operator(111)" value="+">+</button></td></br>
+		</tr>
+		<tr>
+			<td><button type="button" onclick="displayNumbersPressed(4)" value="4">4</button></td><td><button type="button" onclick="displayNumbersPressed(5)" value="5">5</button></td><td><button type="button" onclick="displayNumbersPressed(6)" value="6">6</button></td><td><button type="button" onclick="operator(222)" value="-">-</button></td></br>
+		</tr>
+		<tr>
+			<td><button type="button" onclick="displayNumbersPressed(7)" value="7">7</button></td><td><button type="button" onclick="displayNumbersPressed(8)" value="8">8</button></td><td><button type="button" onclick="displayNumbersPressed(9)" value="9">9</button></td><td><button type="button" onclick="operator(333)" value="*">*</button></td></br>
+		</tr>
+		<tr>
+			<td><button type="button" onclick="displayNumbersPressed(0)" value="0">0</button></td><td><button value="C" type="reset">C</button></td><td><button type="button" onclick="math(555)" value="=">=</button></td><td><button type="button" onclick="operator(444)" value="/">/</button></td></br>
+		</tr>
+	</table>
+</form>
+	
+</div>
+</body>
+</html>
